@@ -21,7 +21,7 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     left: 280px;
     padding: 0;
     margin-right: 15px;
-    background-color: red;
+    background-color: darkblue;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -29,16 +29,96 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     height: 50px;
 }
 .elemento:hover{
-    background-color: blueviolet;
+    background-color: blue;
     color: white;
 }
 .fondo_banner{
     background-color: black;
     height: 500px;
+    position: relative;
+}
+.fondo_banner>img{
+    position: absolute;
+    opacity: 0.5;
+}
+.texto{
+    left: 35%;
+    top: 20%;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
 }
 .divisor{
     background-color: darkred;
-    height: 100px;
+    height: 80px;
+}
+#boton_banner{
+    margin-top: 70px;
+    padding: 10px;
+}
+.info{
+    background-color: black;
+    height: 300px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo{
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+}
+.hola{
+    background-color: rgb(105, 6, 35);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.carreras{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.iti{
+    background-color: blue;
+    border-color: 1px black solid;
+    padding: 15px;
+    width: 350px;
+    height: 450px;
+}
+.item{
+    background-color: blue;
+    border-color: 1px black solid;
+    padding: 15px;
+    width: 350px;
+    height: 450px;
+    margin-left: 100px;
+}
+footer{
+    background-color: darkblue;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+.final{
+    list-style: none;
+    text-decoration: none;
+}
+.final>li>a{
+    color: red;
+    text-decoration:none;
+}
+.final>li>a:hover{
+    color: gray;
+    text-decoration:none;
+}
+.formulario{
+    margin-left: 40px;
 }
 </style>
 </head>
@@ -55,9 +135,77 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
             <div class="elemento" onclick="redirigir('index.html')"><p>Indicadores</p></div>
     </section>
     <section id="banner" class="banner">
-        <div class="fondo_banner"></div>
-        <div class="divisor"></div>
+    <div class="fondo_banner">
+            <img src="gato.jpg" width="100%" height="100%">
+            <div class="texto">
+                <h1 style="font-size: 50px; ">ACADEMIA DE ITI</h1>
+                <h2>Universidad Politecnica de San Luis Potosi</h2>
+                <button id="boton_banner">Conocenos</button>
+            </div>
+    </div>
+    <div class="divisor"></div>
     </section>
+    <section id="informacion">
+        <div class="info">
+            <img src="gato.jpg" width="300px" height="280px" style="margin: 20px;">
+        <div class="parrafo">
+            <h2>Insert Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi doloremque deleniti. Harum facere debitis dolorem atque dolor amet. Labore dolore veritatis ipsam aut praesentium nemo dicta. Esse, ut voluptatem?</p>
+            <a href="#">Go ></a>
+        </div>
+        </div>
+    </section>
+
+    <section id="bofo">
+      <div class="hola">
+        <h2>Carreras de la Academia</h2>
+        <div class="carreras">
+            <div class="iti">
+                <h2 style="text-align: center;">ITI</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
+                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: white;">Go to ></a></p>
+            </div>
+            <div class="item">
+                <h2 style="text-align: center;">ITEM</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
+                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: white;">Go to ></a></p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <nav>
+            
+            <ul class="final">
+                <li><h2>General</h2></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Informacion</a></li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="final">
+                <li><h2>Alumnos</h2></li>
+                <li><a href="#">Residencias</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Certificaciones</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="formulario">
+            <form>
+                <h2>Contactanos: </h2>
+                <p>Nombre: <input type="text"> Correo: <input type="text"></p>
+                <p>Comentarios: <br><textarea style="resize: none; width: 450px;"></textarea>
+                <p><input type="submit"></p>
+            </form>
+        </div>
+    </footer>
     <script>
         function redirigir(url) {
     window.location.href = url ; 
