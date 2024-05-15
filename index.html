@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia ITI</title>
+<!--//////////////////////////////Inicio del CSS//////////////////////////////////////////////////////////-->
+<style>
+body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
+.menu{
+    background-color: darkblue;
+    height: 50px;
+    display: flex;
+}
+.marca{
+    position: relative;
+    left: 250px;
+}
+.elemento{
+    position: relative;
+    left: 280px;
+    padding: 0;
+    margin-right: 15px;
+    background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+}
+.elemento:hover{
+    background-color: blueviolet;
+    color: white;
+}
+</style>
 </head>
 <body>
-    <p>Welcome</p>
+    <section class="menu">
+            <div class="marca" onclick="redirigir('#')"><img src="gato.jpg" width="200px" height="50px"></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Inicio</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Info</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Carreras</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Personal</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Residencias</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Proyectos</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Galeria</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Indicadores</p></div>
+    </section>
+    <script>
+        function redirigir(url) {
+    window.location.href = url ; 
+}
+    </script>
 </body>
 </html>
