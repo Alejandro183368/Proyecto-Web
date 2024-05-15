@@ -32,10 +32,18 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     background-color: blueviolet;
     color: white;
 }
+.fondo_banner{
+    background-color: black;
+    height: 500px;
+}
+.divisor{
+    background-color: darkred;
+    height: 100px;
+}
 </style>
 </head>
 <body>
-    <section class="menu">
+    <section class="menu" id="menu">
             <div class="marca" onclick="redirigir('#')"><img src="gato.jpg" width="200px" height="50px"></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Inicio</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Info</p></div>
@@ -45,6 +53,10 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
             <div class="elemento" onclick="redirigir('index.html')"><p>Proyectos</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Galeria</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Indicadores</p></div>
+    </section>
+    <section id="banner" class="banner">
+        <div class="fondo_banner"></div>
+        <div class="divisor"></div>
     </section>
     <script>
         function redirigir(url) {
