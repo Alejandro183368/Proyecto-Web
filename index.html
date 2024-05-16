@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia ITI</title>
+    <link rel="icon" href="Logotipo.png" type="image/x-icon">
 <!--//////////////////////////////Inicio del CSS//////////////////////////////////////////////////////////-->
 <style>
 body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
 .menu{
-    background-color: darkblue;
+    background-color: #192A56;
     height: 50px;
     display: flex;
+    font-family:fantasy;
 }
 .marca{
     position: relative;
     left: 250px;
 }
 .elemento{
+    color: #dedede;
     position: relative;
     left: 280px;
     padding: 0;
     margin-right: 15px;
-    background-color: darkblue;
+    background-color: #192A56;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -29,8 +32,8 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     height: 50px;
 }
 .elemento:hover{
-    background-color: blue;
-    color: white;
+    background-color: #FFA500;
+    color:black;
 }
 .fondo_banner{
     background-color: black;
@@ -49,15 +52,25 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     position: absolute;
 }
 .divisor{
-    background-color: darkred;
+    background-color: #FFA500;
     height: 80px;
 }
 #boton_banner{
-    margin-top: 70px;
+    color: #dedede;
+    background-color: #192A56;
+    border: 1px solid #192A56;
+    border-radius: 100px;
+    margin-top: 50px;
     padding: 10px;
+    transform: scale(1.5,1.5);
+}
+#boton_banner:hover{
+    color: #192A56;
+    background-color: #FFA500;
+    border: 0px solid #dedede;
 }
 .info{
-    background-color: black;
+    background-color: #283747;
     height: 300px;
     padding: 50px;
     color: azure;
@@ -70,7 +83,7 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     margin: 0px;
 }
 .hola{
-    background-color: rgb(105, 6, 35);
+    background-color:#192A56;
     padding: 20px;
     text-align: center;
     color: white;
@@ -82,14 +95,17 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     text-align: justify;
 }
 .iti{
-    background-color: blue;
+    background-color: #283747;
     border-color: 1px black solid;
     padding: 15px;
     width: 350px;
     height: 450px;
 }
+.iti>h2,.item>h2{
+    color: #FFA500
+}
 .item{
-    background-color: blue;
+    background-color: #283747;
     border-color: 1px black solid;
     padding: 15px;
     width: 350px;
@@ -97,7 +113,7 @@ body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abar
     margin-left: 100px;
 }
 footer{
-    background-color: darkblue;
+    background-color: #FF8C00;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -110,11 +126,11 @@ footer{
     text-decoration: none;
 }
 .final>li>a{
-    color: red;
+    color: #192A56;
     text-decoration:none;
 }
 .final>li>a:hover{
-    color: gray;
+    color: #dedede;
     text-decoration:none;
 }
 .formulario{
@@ -124,34 +140,35 @@ footer{
 </head>
 <body>
     <section class="menu" id="menu">
-            <div class="marca" onclick="redirigir('#')"><img src="gato.jpg" width="200px" height="50px"></div>
+            <div class="marca" onclick="redirigir('#')"><img src="Logo_2.png" width="50px" height="50px"></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Inicio</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Info</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Informacion</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Carreras</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Personal</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Residencias</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Proyectos</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Galeria</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Indicadores</p></div>
+            <div class="elemento" onclick="redirigir('index.html')"><p>Ayuda</p></div>
     </section>
     <section id="banner" class="banner">
     <div class="fondo_banner">
-            <img src="gato.jpg" width="100%" height="100%">
+            <img src="Academia_1.jpg" width="100%" height="100%">
             <div class="texto">
                 <h1 style="font-size: 50px; ">ACADEMIA DE ITI</h1>
                 <h2>Universidad Politecnica de San Luis Potosi</h2>
                 <button id="boton_banner">Conocenos</button>
             </div>
     </div>
-    <div class="divisor"></div>
+   <!-- <div class="divisor"></div>-->
     </section>
     <section id="informacion">
         <div class="info">
             <img src="gato.jpg" width="300px" height="280px" style="margin: 20px;">
         <div class="parrafo">
-            <h2>Insert Title</h2>
+            <h2>Acerca de Nosotros.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi doloremque deleniti. Harum facere debitis dolorem atque dolor amet. Labore dolore veritatis ipsam aut praesentium nemo dicta. Esse, ut voluptatem?</p>
-            <a href="#">Go ></a>
+            <a href="#" style="text-decoration: none; color: #FFA500; font-size: larger;">Ver más ></a>
         </div>
         </div>
     </section>
@@ -164,13 +181,13 @@ footer{
                 <h2 style="text-align: center;">ITI</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
-                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: white;">Go to ></a></p>
+                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: #FFA500; font-size:larger;">Go to ></a></p>
             </div>
             <div class="item">
                 <h2 style="text-align: center;">ITEM</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
-                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: white;">Go to ></a></p>
+                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: #FFA500; font-size: larger;">Go to ></a></p>
             </div>
         </div>
       </div>
