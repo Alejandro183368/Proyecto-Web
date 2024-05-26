@@ -1,7 +1,4 @@
-body{
-    padding: 0;
-    margin: 0;
-} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
+body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
 .menu{
     background-color: #192A56;
     height: 50px;
