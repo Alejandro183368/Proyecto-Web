@@ -4,143 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia ITI</title>
-    <link rel="icon" href="Logotipo.png" type="image/x-icon">
-<!--//////////////////////////////Inicio del CSS//////////////////////////////////////////////////////////-->
-<style>
-body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
-.menu{
-    background-color: #192A56;
-    height: 50px;
-    display: flex;
-    font-family:fantasy;
-}
-.marca{
-    position: relative;
-    left: 250px;
-}
-.elemento{
-    color: #dedede;
-    position: relative;
-    left: 280px;
-    padding: 0;
-    margin-right: 15px;
-    background-color: #192A56;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 80px;
-    height: 50px;
-}
-.elemento:hover{
-    background-color: #FFA500;
-    color:black;
-}
-.fondo_banner{
-    background-color: black;
-    height: 500px;
-    position: relative;
-}
-.fondo_banner>img{
-    position: absolute;
-    opacity: 0.5;
-}
-.texto{
-    left: 35%;
-    top: 20%;
-    color: aliceblue;
-    text-align: center;
-    position: absolute;
-}
-.divisor{
-    background-color: #FFA500;
-    height: 80px;
-}
-#boton_banner{
-    color: #dedede;
-    background-color: #192A56;
-    border: 1px solid #192A56;
-    border-radius: 100px;
-    margin-top: 50px;
-    padding: 10px;
-    transform: scale(1.5,1.5);
-}
-#boton_banner:hover{
-    color: #192A56;
-    background-color: #FFA500;
-    border: 0px solid #dedede;
-}
-.info{
-    background-color: #283747;
-    height: 300px;
-    padding: 50px;
-    color: azure;
-    display: flex;
-    justify-content:space-around;
-}
-.parrafo{
-    width: 1000px;
-    padding: 0px;
-    margin: 0px;
-}
-.hola{
-    background-color:#192A56;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-.carreras{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-}
-.iti{
-    background-color: #283747;
-    border-color: 1px black solid;
-    padding: 15px;
-    width: 350px;
-    height: 450px;
-}
-.iti>h2,.item>h2{
-    color: #FFA500
-}
-.item{
-    background-color: #283747;
-    border-color: 1px black solid;
-    padding: 15px;
-    width: 350px;
-    height: 450px;
-    margin-left: 100px;
-}
-footer{
-    background-color: #FF8C00;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-}
-.final{
-    list-style: none;
-    text-decoration: none;
-}
-.final>li>a{
-    color: #192A56;
-    text-decoration:none;
-}
-.final>li>a:hover{
-    color: #dedede;
-    text-decoration:none;
-}
-.formulario{
-    margin-left: 40px;
-}
-</style>
+    <link rel="icon" href="sources/Logotipo.png" type="image/x-icon">
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <section class="menu" id="menu">
-            <div class="marca" onclick="redirigir('#')"><img src="Logo_2.png" width="50px" height="50px"></div>
+            <div class="marca" onclick="redirigir('#')"><img src="sources/Logo_2.png" width="50px" height="50px"></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Inicio</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Informacion</p></div>
             <div class="elemento" onclick="redirigir('index.html')"><p>Carreras</p></div>
@@ -153,7 +22,7 @@ footer{
     </section>
     <section id="banner" class="banner">
     <div class="fondo_banner">
-            <img src="Academia_1.jpg" width="100%" height="100%">
+            <img src="sources/Academia_1.jpg" width="100%" height="100%">
             <div class="texto">
                 <h1 style="font-size: 50px; ">ACADEMIA DE ITI</h1>
                 <h2>Universidad Politecnica de San Luis Potosi</h2>
@@ -164,7 +33,7 @@ footer{
     </section>
     <section id="informacion">
         <div class="info">
-            <img src="gato.jpg" width="300px" height="280px" style="margin: 20px;">
+            <img src="sources/gato.jpg" width="300px" height="280px" style="margin: 20px;">
         <div class="parrafo">
             <h2>Acerca de Nosotros.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi doloremque deleniti. Harum facere debitis dolorem atque dolor amet. Labore dolore veritatis ipsam aut praesentium nemo dicta. Esse, ut voluptatem?</p>

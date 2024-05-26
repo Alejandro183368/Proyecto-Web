@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
+.menu{
+    background-color: #192A56;
+    height: 50px;
+    display: flex;
+    font-family:fantasy;
+}
+.marca{
+    position: relative;
+    left: 250px;
+}
+.elemento{
+    color: #dedede;
+    position: relative;
+    left: 280px;
+    padding: 0;
+    margin-right: 15px;
+    background-color: #192A56;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+}
+.elemento:hover{
+    background-color: #FFA500;
+    color:black;
+}
+.fondo_banner{
+    background-color: black;
+    height: 500px;
+    position: relative;
+}
+.fondo_banner>img{
+    position: absolute;
+    opacity: 0.5;
+}
+.texto{
+    left: 35%;
+    top: 20%;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+}
+.divisor{
+    background-color: #FFA500;
+    height: 80px;
+}
+#boton_banner{
+    color: #dedede;
+    background-color: #192A56;
+    border: 1px solid #192A56;
+    border-radius: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    transform: scale(1.5,1.5);
+}
+#boton_banner:hover{
+    color: #192A56;
+    background-color: #FFA500;
+    border: 0px solid #dedede;
+}
+.info{
+    background-color: #283747;
+    height: 300px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo{
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+}
+.hola{
+    background-color:#192A56;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.carreras{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.iti{
+    background-color: #283747;
+    border-color: 1px black solid;
+    padding: 15px;
+    width: 350px;
+    height: 450px;
+}
+.iti>h2,.item>h2{
+    color: #FFA500
+}
+.item{
+    background-color: #283747;
+    border-color: 1px black solid;
+    padding: 15px;
+    width: 350px;
+    height: 450px;
+    margin-left: 100px;
+}
+footer{
+    background-color: #FF8C00;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+.final{
+    list-style: none;
+    text-decoration: none;
+}
+.final>li>a{
+    color: #192A56;
+    text-decoration:none;
+}
+.final>li>a:hover{
+    color: #dedede;
+    text-decoration:none;
+}
+.formulario{
+    margin-left: 40px;
+}
