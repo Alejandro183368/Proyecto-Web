@@ -196,3 +196,149 @@ footer{
     color: #ffb84f;
     font-family: Sniglet;
 }
+/*------------------------------------------------ Galeria y Videos-----------------------------------------------------------------*/
+.slider-box{
+    width: 1280px;
+    height: 580px;
+    margin: 0px auto 0px;
+    overflow: hidden;
+}
+.slider-box>ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-box>li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box img{
+    width: 1280px;
+    height: 550px;
+}
+@keyframes slide {
+    0%{ margin-left: 0;}
+    16.6%{ margin-left: 0;}
+
+    16.6%{ margin-left: -100%;}
+    33.2%{ margin-left: -100%;}
+
+    33.2%{ margin-left: -200%;}
+    49.8%{ margin-left: -200%;}
+    
+    49.8%{ margin-left: -300%;}
+    66.4%{ margin-left: -300%;}
+
+    66.4%{ margin-left: -400%;}
+    83%{ margin-left: -400%;}
+
+    83%{ margin-left: -500%;}
+    100%{ margin-left: -500%;}
+}
+@media(max-width:250px){
+    body{
+        padding: 50px;
+    }
+    .slider-box{
+        width: 80%;
+    }
+}
+#Fotos{
+    margin: 0;
+    padding: 0;
+}
+#Fotos>h2{
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    top: -150px;
+    width: 100%;
+    background-color: #507093;
+    color: #dedede;
+    font-size: 28px;
+    font-family: Outfit;
+}
+.video_principal{
+    width: 1280px;
+    margin: 0px 120px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+#Videos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 720px;
+    background-color: #283747;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#Videos>h2{
+    text-align: center;
+    top: 0;
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #507093;
+    color: #dedede;
+    font-size: 28px;
+    font-family: Outfit;
+}
+/*-------------------------------------------------------------------------------------------------*/
+.slider-box_2{
+    width: 580px;
+    height: 350px;
+    overflow: hidden;
+}
+.slider-box_2>ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    animation: slide_2 15s infinite alternate ease-in-out;
+}
+.slider-box_2>li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box_2 img{
+    width: 580px;
+    height: 320px;
+}
+@keyframes slide_2 {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    20%{ margin-left: -100%;}
+    40%{ margin-left: -100%;}
+
+    40%{ margin-left: -200%;}
+    60%{ margin-left: -200%;}
+    
+    60%{ margin-left: -300%;}
+    80%{ margin-left: -300%;}
+
+    80%{ margin-left: -400%;}
+    100%{ margin-left: -400%;}
+}
+@media(max-width:250px){
+    body{
+        padding: 50px;
+    }
+    .slider-box{
+        width: 80%;
+    }
+}
+.Actividades{
+    width: 1400px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: row;
+}
+.pio{
+    width: 700px;
+}
