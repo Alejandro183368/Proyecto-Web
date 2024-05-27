@@ -4,229 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia ITI</title>
-    <link rel="icon" href="Logotipo.png" type="image/x-icon">
-<!--//////////////////////////////Inicio del CSS//////////////////////////////////////////////////////////-->
-<style>
-body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
-.menu{
-    background-color: #192A56;
-    height: 50px;
-    display: flex;
-    font-family:fantasy;
-}
-.marca{
-    position: relative;
-    left: 250px;
-}
-.elemento{
-    color: #dedede;
-    position: relative;
-    left: 280px;
-    padding: 0;
-    margin-right: 15px;
-    background-color: #192A56;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 80px;
-    height: 50px;
-}
-.elemento:hover{
-    background-color: #FFA500;
-    color:black;
-}
-.fondo_banner{
-    background-color: black;
-    height: 500px;
-    position: relative;
-}
-.fondo_banner>img{
-    position: absolute;
-    opacity: 0.5;
-}
-.texto{
-    left: 35%;
-    top: 20%;
-    color: aliceblue;
-    text-align: center;
-    position: absolute;
-}
-.divisor{
-    background-color: #FFA500;
-    height: 80px;
-}
-#boton_banner{
-    color: #dedede;
-    background-color: #192A56;
-    border: 1px solid #192A56;
-    border-radius: 100px;
-    margin-top: 50px;
-    padding: 10px;
-    transform: scale(1.5,1.5);
-}
-#boton_banner:hover{
-    color: #192A56;
-    background-color: #FFA500;
-    border: 0px solid #dedede;
-}
-.info{
-    background-color: #283747;
-    height: 300px;
-    padding: 50px;
-    color: azure;
-    display: flex;
-    justify-content:space-around;
-}
-.parrafo{
-    width: 1000px;
-    padding: 0px;
-    margin: 0px;
-}
-.hola{
-    background-color:#192A56;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-.carreras{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-}
-.iti{
-    background-color: #283747;
-    border-color: 1px black solid;
-    padding: 15px;
-    width: 350px;
-    height: 450px;
-}
-.iti>h2,.item>h2{
-    color: #FFA500
-}
-.item{
-    background-color: #283747;
-    border-color: 1px black solid;
-    padding: 15px;
-    width: 350px;
-    height: 450px;
-    margin-left: 100px;
-}
-footer{
-    background-color: #FF8C00;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-}
-.final{
-    list-style: none;
-    text-decoration: none;
-}
-.final>li>a{
-    color: #192A56;
-    text-decoration:none;
-}
-.final>li>a:hover{
-    color: #dedede;
-    text-decoration:none;
-}
-.formulario{
-    margin-left: 40px;
-}
-</style>
+    <link rel="icon" href="sources/Logotipo.png" type="image/x-icon">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poetsen One|Outfit|Jaini Purva|Sniglet">
 </head>
 <body>
-    <section class="menu" id="menu">
-            <div class="marca" onclick="redirigir('#')"><img src="Logo_2.png" width="50px" height="50px"></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Inicio</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Informacion</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Carreras</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Personal</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Residencias</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Proyectos</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Galeria</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Indicadores</p></div>
-            <div class="elemento" onclick="redirigir('index.html')"><p>Ayuda</p></div>
+    <nav>
+        <ul class="horizontal">
+            <li><img src="sources/Logo_2.png" width="50px" height="55px"></li>
+            <li><a href="index.html">Inicio</a>
+                <ul class="vertical">
+                    <li><a href="#Informacion">Informacion</a></li>
+                    <li><a href="#Historia">Historia</a></li>
+                </ul>
+            </li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="#services">Carreras</a>
+                        <ul class="vertical">
+                            <li><a href="#web">ITI</a></li>
+                            <li><a href="#design">ITEM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Residencias</a>
+                        <ul class="vertical">
+                            <li><a href="#web">Informacion <br>sobre Residencias</a></li>
+                            <li><a href="#design">Requisitos y Procesos</a></li>
+                            <li><a href="#design">Candelarización</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#services">Proyectos</a></li>
+                    <li><a href="#contact">Galeria y Videos</a></li>
+                    <li><a href="#about">Indicadores</a>
+                        <ul class="vertical">
+                            <li><a href="#web">Certificaciones</a></li>
+                            <li><a href="#design">Egresados</a></li>
+                            <li><a href="#design">Alumnos Destacados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Interacción</a>
+                        <ul class="vertical">
+                            <li><a href="#web">Blog</a></li>
+                            <li><a href="#design">Contacto</a></li>
+                            <li><a href="#design">Chat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Ayuda</a></li>
+                </ul>
+            </nav>
+    <section id="banner">
+        <div class="principal_banner">
+            <div class="img_banner"><img src="sources/Academia_1.jpg" width="100%" height="100%" style="filter: brightness(0.6);"></div>
+        </div>
+        <div class="items">
+        <h2>Academia de ATIT</h2>
+        <button>Conocenos</button>
+        </div>
     </section>
-    <section id="banner" class="banner">
-    <div class="fondo_banner">
-            <img src="Academia_1.jpg" width="100%" height="100%">
-            <div class="texto">
-                <h1 style="font-size: 50px; ">ACADEMIA DE ITI</h1>
-                <h2>Universidad Politecnica de San Luis Potosi</h2>
-                <button id="boton_banner">Conocenos</button>
-            </div>
-    </div>
-   <!-- <div class="divisor"></div>-->
-    </section>
-    <section id="informacion">
+    <section id="Informacion">
         <div class="info">
-            <img src="gato.jpg" width="300px" height="280px" style="margin: 20px;">
+            <img src="sources/Academia_2.jpg" width="500px" height="300px" style="margin: 20px;">
         <div class="parrafo">
-            <h2>Acerca de Nosotros.</h2>
+            <h2>¿Qué es la Academia de ATIT?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi doloremque deleniti. Harum facere debitis dolorem atque dolor amet. Labore dolore veritatis ipsam aut praesentium nemo dicta. Esse, ut voluptatem?</p>
-            <a href="#" style="text-decoration: none; color: #FFA500; font-size: larger;">Ver más ></a>
         </div>
         </div>
     </section>
-
-    <section id="bofo">
-      <div class="hola">
-        <h2>Carreras de la Academia</h2>
-        <div class="carreras">
-            <div class="iti">
-                <h2 style="text-align: center;">ITI</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
-                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: #FFA500; font-size:larger;">Go to ></a></p>
+    <section id="Historia">
+        <div class="histo">
+            <div class="parrafo">
+                <h2>Su historia es....</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi doloremque deleniti. Harum facere debitis dolorem atque dolor amet. Labore dolore veritatis ipsam aut praesentium nemo dicta. Esse, ut voluptatem?</p>
             </div>
-            <div class="item">
-                <h2 style="text-align: center;">ITEM</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus ipsum sint laboriosam explicabo, laudantium, suscipit provident neque sed odio mollitia cupiditate voluptatum rerum reiciendis ratione voluptates facilis, odit autem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a nemo fuga sequi ipsam voluptatum dolorem inventore, minus veritatis deleniti quibusdam corrupti autem architecto aliquid quam iste totam. Totam, aliquid.</p>
-                <p style="text-align: center;"><a href="#" style="text-decoration: none; color: #FFA500; font-size: larger;">Go to ></a></p>
-            </div>
+            <img src="sources/Academia_3.jpg" width="500px" height="300px" style="margin: 20px;">
         </div>
-      </div>
     </section>
     <footer>
-        <nav>
-            
-            <ul class="final">
-                <li><h2>General</h2></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Informacion</a></li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Personal</a></li>
-                <li><a href="#">Acerca de</a></li>
+        <div class="Contenidos">
+            <ul>
+                <li><h3>Inicio</h3></li>
+                <li><a href="">Informacion</a></li>
+                <li><a href="">Historia</a></li>
             </ul>
-        </nav>
-        <nav>
-            <ul class="final">
-                <li><h2>Alumnos</h2></li>
-                <li><a href="#">Residencias</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Certificaciones</a></li>
-                <li><a href="#">Blog</a></li>
+            <ul>
+                <li><h3>Carreras</h3></li>
+                <li><a href="">ITI</a></li>
+                <li><a href="">ITEM</a></li>
             </ul>
-        </nav>
-        <div class="formulario">
-            <form>
-                <h2>Contactanos: </h2>
-                <p>Nombre: <input type="text"> Correo: <input type="text"></p>
-                <p>Comentarios: <br><textarea style="resize: none; width: 450px;"></textarea>
-                <p><input type="submit"></p>
-            </form>
+            <ul>
+                <li><h3>Residencias</h3></li>
+                <li><a href="">Informacion Sobre <br>Residencias</a></li>
+                <li><a href="">Requisitos y Procesos</a></li>
+                <li><a href="">Calendarizacion</a></li>
+            </ul>
+            <ul>
+                <li><h3>Indicadores</h3></li>
+                <li><a href="">Certificaciones</a></li>
+                <li><a href="">Egresados</a></li>
+                <li><a href="">Alumnos Destacados</a></li>
+            </ul>
+            <ul>
+                <li><h3>Interacción</h3></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Chat</a></li>
+            </ul>
         </div>
+        <p>Desarrollado por:<br>Jesús Alejandro Antonio Rocha & Octavio Vázquez Solorio</p>
+
     </footer>
-    <script>
+</body>
+</html>
+<!--   
+<script>
         function redirigir(url) {
     window.location.href = url ; 
 }
     </script>
-</body>
-</html>
+-->
