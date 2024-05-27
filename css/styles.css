@@ -1,0 +1,140 @@
+body{padding: 0;margin: 0;} /*ajustamos el borde y el padding del body para abarcar toda la pantalla*/
+/*------------------------------------------- Menú Desplegable ---------------------------------------------------------*/
+nav{
+    background-color: #192A56;
+    font-size: 18px;
+    width: 100%;
+    font-family: Poetsen One;
+    z-index: 1000;
+}
+.horizontal{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+.horizontal>li>a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #dedede;
+    z-index: 1000;
+}
+.horizontal>li>a:hover{
+    background-color: #FF8C00;
+}
+.vertical>li:hover{
+    background-color: #FF8C00;
+}
+.vertical{
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+    position: absolute;
+    list-style: none;
+    display: none;
+    background-color: #192A56;
+    z-index: 1000;
+}
+.vertical>li>a{
+    display: block;
+    text-decoration: none;
+    color: #dedede;
+    padding: 15px 15px 15px 20px;   
+    z-index: 1000; 
+}
+.horizontal>li:hover .vertical{
+    display: block;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------  Banner  -----------------------------------------------------------*/
+.img_banner{
+    width: 100%;
+    height: 500px;
+}
+.items{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    text-align: center;
+    font-size: 34px;
+    color: #dedede;
+    font-family: Jaini Purva;
+}
+.items>button{
+    border-radius: 15px;
+    border: 0;
+    font-size: 18px;
+    background-color: #192A56;
+    color: #dedede;
+    padding: 15px;
+    font-family: Outfit;
+}
+.items>button:hover{
+    background-color: #FF8C00;
+    color: #192A56;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------INFORMACIÓN-----------------------------------------------------------*/
+.info{
+    background-color: #283747;
+    height: 320px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo{
+    width: 700px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+.parrafo>h2{
+    font-size: 28px;
+    color: #ffb84f;
+    font-family: Sniglet;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------HISTORIA-----------------------------------------------------------*/
+.histo{
+    background-color: #507093;
+    height: 320px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Pie de pagina-----------------------------------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #192A56;
+    color: #dedede;
+}
+.Contenidos{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+.Contenidos>ul{
+    list-style: none;
+}
+.Contenidos>ul>li>h3{
+    margin-bottom:0px;
+    font-size: 20px;
+    color: #FF8C00;
+}
+.Contenidos>ul>li>a{
+    text-decoration: none;
+    color: #dedede;
+    font-size: 18px;
+}
+.Contenidos>ul>li>a:hover{
+    text-decoration:underline;
+}
