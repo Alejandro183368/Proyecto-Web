@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
@@ -56,16 +58,34 @@
                     </li>
                 </ul>
             </nav>
+          <section class="signup-section" id="signup">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-md-10 col-lg-8 mx-auto text-center">
+                            <i class="far fa-paper-plane fa-2x mb-2 text-yoyo"></i>
+                            <h2 class="text-yoyo mb-5">Danos tus comentarios</h2>
+                            <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="mailto:183955@upslp.edu.mx">
+                                <!-- Email address input-->
+                                <div class="row input-group-newsletter">
+                                    <div class="col"><input class="form-control" id="emailAddress" type="text" placeholder="Escribe Aqui" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                    <div class="col-auto"><input type="submit" style="background-color: #192A56; color: #fff; border-radius: 10px;"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+         </section>  
+
     <section class="contact-section bg-black" style="padding-bottom: 40px;">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
+                <div class="col-md-4 mb-3 mb-md-0" onclick="redirigir('https://www.google.com.mx/maps/place/Universidad+Politécnica+de+San+Luis+Potosí/@22.1223377,-100.9868283,17z/data=!3m1!4b1!4m6!3m5!1s0x842a9f5412c6b56f:0xe1b3dea4c6aa1c03!8m2!3d22.1223377!4d-100.9842534!16s%2Fm%2F04y9g6q?entry=ttu')" style="cursor: pointer;">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Dirección</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                            <div class="small text-black-50">C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.</div>
                         </div>
                     </div>
                 </div>
@@ -75,17 +95,17 @@
                             <i class="fas fa-envelope text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-yoyo"><a href="#!">hello@yourdomain.com</a></div>
+                            <div class="small text-yoyo"><a href="CoordinacionATIT@upslp.edu.mx">CoordinacionATIT@upslp.edu.mx</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
+                            <div class="small text-yoyo"><a href="cuerpoacademicoatit@upslp.edu.mx">cuerpoacademicoatit@upslp.edu.mx</a></div>
                         </div>
                     </div>
                 </div>
