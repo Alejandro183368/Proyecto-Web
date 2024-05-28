@@ -92,6 +92,10 @@ nav{
     margin: 0px;
     text-align: justify;
 }
+.parrafo>ul{
+    padding: 0;
+    margin: 0;
+}
 .parrafo>h2{
     font-size: 28px;
     color: #ffb84f;
@@ -145,6 +149,14 @@ footer{
     display: flex;
     flex-direction: column;
     align-items:center;
+    font-family: Poetsen One;
+    background-color: #283747;
+}
+.principal_maestros>h2{
+    color: #dedede;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
 }
 .galeria_maestros{
     display: flex;
@@ -159,11 +171,16 @@ footer{
 }
 .maestro>img{
     width: 250px;
-    height: 250px;
+    height: 350px;
 }
 .maestro>p{
     width: 250px;
-    text-align: justify;
+    color: #dedede;
+    text-align: center;
+}
+.maestro>h2{
+    color: #ffcf95;
+    text-align: center;
 }
 .maestro>ul{
     width: 250px;
@@ -249,12 +266,12 @@ footer{
 #Fotos{
     margin: 0;
     padding: 0;
+    background-color: #283747;
 }
 #Fotos>h2{
     text-align: center;
-    padding-top:5px;
+    padding-top:15px;
     padding-bottom: 5px;
-    top: -150px;
     width: 100%;
     background-color: #507093;
     color: #dedede;
@@ -271,7 +288,7 @@ footer{
     margin: 0;
     padding: 0;
     display: flex;
-    height: 720px;
+    height: 800px;
     background-color: #283747;
     flex-direction: column;
     justify-content:space-around;
@@ -338,7 +355,26 @@ footer{
     padding-left: 120px;
     display: flex;
     flex-direction: row;
+    background-color: #dedede;
 }
 .pio{
     width: 700px;
+}
+.galeria_proceso{
+    display: flex;
+    flex-direction: row;
+}
+.proceso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+}
+.proceso>img{
+    width: 700px;
+    height: 500px;
+}
+.proceso>h2,p{
+    padding: 10px;
 }
