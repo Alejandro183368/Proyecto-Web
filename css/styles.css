@@ -92,6 +92,10 @@ nav{
     margin: 0px;
     text-align: justify;
 }
+.parrafo>ul{
+    padding: 0;
+    margin: 0;
+}
 .parrafo>h2{
     font-size: 28px;
     color: #ffb84f;
@@ -137,4 +141,280 @@ footer{
 }
 .Contenidos>ul>li>a:hover{
     text-decoration:underline;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Pagina del Personal-----------------------------------------------------------*/
+/*-----------------------------------------------Galeria----------------------------------------------------------------*/
+.principal_maestros{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: Poetsen One;
+    background-color: #283747;
+}
+.principal_maestros>h2{
+    color: #dedede;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.galeria_maestros{
+    display: flex;
+    flex-direction: row;
+}
+.galeria_maestros2{
+    display: flex;
+    flex-direction: row;
+}
+.maestro{
+    padding: 25px;
+}
+.maestro>img{
+    width: 250px;
+    height: 350px;
+}
+.maestro>p{
+    width: 250px;
+    color: #dedede;
+    text-align: center;
+}
+.maestro>h2{
+    color: #ffcf95;
+    text-align: center;
+}
+.maestro>ul{
+    width: 250px;
+    text-align: justify;
+    padding: 0;
+    list-style: square;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+.divisor{
+    width: 100%;
+    height: 50px;
+    background-color: #556a9f;
+}
+.iti{
+    background-color: #283747;
+    height: 520px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo_iti{
+    width: 700px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+.parrafo_iti>h2{
+    font-size: 28px;
+    color: #ffb84f;
+    font-family: Sniglet;
+}
+.principal_iti{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: Poetsen One;
+    background-color: #507093;
+}
+.principal_iti>h2{
+    color: #dedede;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.galeria_iti{
+    display: flex;
+    flex-direction: row;
+}
+.iti_V{
+    padding: 25px;
+}
+.iti_V>img{
+    width: 450px;
+    height: 350px;
+}
+.iti_V>p{
+    width: 450px;
+    color: #dedede;
+    text-align: justify;
+}
+.iti_V>h2{
+    color: #ffb84f;
+    text-align: center;
+}
+.iti_V>ul{
+    width: 450px;
+    color: #dedede;
+    text-align: justify;
+    padding: 0;
+    list-style: square;
+}
+/*------------------------------------------------ Galeria y Videos-----------------------------------------------------------------*/
+.slider-box{
+    width: 1280px;
+    height: 580px;
+    margin: 0px auto 0px;
+    overflow: hidden;
+}
+.slider-box>ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-box>li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box img{
+    width: 1280px;
+    height: 550px;
+}
+@keyframes slide {
+    0%{ margin-left: 0;}
+    16.6%{ margin-left: 0;}
+
+    16.6%{ margin-left: -100%;}
+    33.2%{ margin-left: -100%;}
+
+    33.2%{ margin-left: -200%;}
+    49.8%{ margin-left: -200%;}
+    
+    49.8%{ margin-left: -300%;}
+    66.4%{ margin-left: -300%;}
+
+    66.4%{ margin-left: -400%;}
+    83%{ margin-left: -400%;}
+
+    83%{ margin-left: -500%;}
+    100%{ margin-left: -500%;}
+}
+@media(max-width:250px){
+    body{
+        padding: 50px;
+    }
+    .slider-box{
+        width: 80%;
+    }
+}
+#Fotos{
+    margin: 0;
+    padding: 0;
+    background-color: #283747;
+}
+#Fotos>h2{
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #507093;
+    color: #dedede;
+    font-size: 28px;
+    font-family: Outfit;
+}
+.video_principal{
+    width: 1280px;
+    margin: 0px 120px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+#Videos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 800px;
+    background-color: #283747;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#Videos>h2{
+    text-align: center;
+    top: 0;
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #507093;
+    color: #dedede;
+    font-size: 28px;
+    font-family: Outfit;
+}
+/*-------------------------------------------------------------------------------------------------*/
+.slider-box_2{
+    width: 580px;
+    height: 350px;
+    overflow: hidden;
+}
+.slider-box_2>ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    animation: slide_2 15s infinite alternate ease-in-out;
+}
+.slider-box_2>li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box_2 img{
+    width: 580px;
+    height: 320px;
+}
+@keyframes slide_2 {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    20%{ margin-left: -100%;}
+    40%{ margin-left: -100%;}
+
+    40%{ margin-left: -200%;}
+    60%{ margin-left: -200%;}
+    
+    60%{ margin-left: -300%;}
+    80%{ margin-left: -300%;}
+
+    80%{ margin-left: -400%;}
+    100%{ margin-left: -400%;}
+}
+@media(max-width:250px){
+    body{
+        padding: 50px;
+    }
+    .slider-box{
+        width: 80%;
+    }
+}
+.Actividades{
+    width: 1400px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #dedede;
+}
+.pio{
+    width: 700px;
+}
+.galeria_proceso{
+    display: flex;
+    flex-direction: row;
+}
+.proceso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+}
+.proceso>img{
+    width: 700px;
+    height: 500px;
+}
+.proceso>h2,p{
+    padding: 10px;
 }
