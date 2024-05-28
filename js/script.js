@@ -82,3 +82,76 @@ function PDF() {
     const pdfUrl = URL.createObjectURL(pdfBlob);
     window.open(pdfUrl);
 }
+function PDF_2() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    const nombres = [
+"	Microsoft Office Specialist (Word, Excel, PowerPoint, Access, Excel Experto) 	",
+"	Key English Test (KET) de Cambridge University 	",
+"	Preliminary English Test (PET) de Cambridge University 	",
+"	Fisrt Certificate in English (FCE) de Cambridge University 	",
+"	Adobe (Photoshop, Flash, Dreamweaver) 	",
+"	Certificación CCNA 	",
+"	Certificación CCENT 1 	",
+"	Certificación CCENT 2 	",
+"	Certificación A+ 	",
+"	Certificación COMPTIA Strata 	",
+"	Certificación LINUX ESSENTIALS 	",
+"	HP ATA CONNECTED DEVICES 	",
+"	HP ATA NETWORKS 	",
+"	MTA Windows® Operating System Fundamentals 	",
+"	MTA Software Development Fundamentals (C#) 	",
+"	MTA Software Development Fundamentals (VB) 	",
+"	MTA Database Fundamentals 	",
+"	MTA Windows® Server Administration Fundamentals 	",
+"	MTA Networking Fundamentals 	",
+"	MTA Security Fundamentals 	",
+"	MTA Cloud Fundamentals 	",
+"	MTA HTML5 Application Development Fundamentals 	",
+"	MTA Introduction to Programming using JavaScript 	",
+"	MTA Introduction to Programming using HTML and CSS 	",
+"	MTA Introduction to Programming using Java 	",
+"	Oracle Java Standard Edition 5 and 6 Certified (Programación Orientada a Objetos), 	",
+"	Oracle Solaris 10 Certified (Sistemas Operativos),  	",
+"	Oracle Certified MySQL Developer (Base de Datos) 	",
+"	Unity User: Programmer 	",
+"	Unity User: VR Developer 	",
+"	ITS Cloud Computing	",
+"	ITS Cybersecurity	",
+"	ITS Databases	",
+"	ITS HTML and CSS	",
+"	ITS Java	",
+"	ITS JavaScript	",
+"	ITS Network Security	",
+"	ITS Networking	",
+"	ITS Python	",
+"	CISCO CCST CYBERSECURITY	",
+"	Fortinet NSE 1, 2, 3, 4, 5, 6	",
+"	PMI Ready 	"
+
+    ];
+
+    const pageHeight = doc.internal.pageSize.height;
+    let y = 20;
+    const lineHeight = 10;
+    const margin = 20;
+
+    doc.setFontSize(12);
+
+    nombres.forEach((nombre, index) => {
+        // Si la posición y + lineHeight es mayor que la altura de la página menos el margen, añadir una nueva página
+        if (y + lineHeight > pageHeight - margin) {
+            doc.addPage();
+            y = margin;
+        }
+        doc.text(nombre, margin, y);
+        y += lineHeight;
+    });
+
+    // Generar el PDF como un Blob
+    const pdfBlob = doc.output('blob');
+
+    // Crear un objeto URL para el Blob y abrirlo en una nueva ventana
+    const pdfUrl = URL.createObjectURL(pdfBlob);
+    window.open(pdfUrl);
+}
