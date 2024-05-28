@@ -213,6 +213,46 @@ footer{
     color: #ffb84f;
     font-family: Sniglet;
 }
+.principal_iti{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: Poetsen One;
+    background-color: #507093;
+}
+.principal_iti>h2{
+    color: #dedede;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.galeria_iti{
+    display: flex;
+    flex-direction: row;
+}
+.iti_V{
+    padding: 25px;
+}
+.iti_V>img{
+    width: 450px;
+    height: 350px;
+}
+.iti_V>p{
+    width: 450px;
+    color: #dedede;
+    text-align: justify;
+}
+.iti_V>h2{
+    color: #ffb84f;
+    text-align: center;
+}
+.iti_V>ul{
+    width: 450px;
+    color: #dedede;
+    text-align: justify;
+    padding: 0;
+    list-style: square;
+}
 /*------------------------------------------------ Galeria y Videos-----------------------------------------------------------------*/
 .slider-box{
     width: 1280px;
