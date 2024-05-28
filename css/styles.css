@@ -468,4 +468,63 @@ footer{
   margin-left: 150px;
 }
 /*-----------------------------------------------------------------------------------------------*/
-
+/*-----------------------------------------INFORMACIÓN-----------------------------------------------------------*/
+.certi{
+    background-color: #507093;
+    height: 320px;
+    padding: 50px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo_certi{
+    width: 700px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+.parrafo_certi>ul{
+    font-size: 28px;
+    color: #ffb84f;
+    padding: 0;
+    margin: 0;
+}
+.parrafo_certi>h2{
+    font-size: 28px;
+    color: #ffb84f;
+    font-family: Sniglet;
+}
+.Listas_Certis{
+    display: flex;
+    width: 800px;
+}
+.Listas_Certis>ul>h2{
+    color: #507093;
+    text-align: center;
+}
+/*-----------------------------------------HISTORIA-----------------------------------------------------------*/
+.Tier_list{
+    background-color: #fff;
+    height: 750px;
+    padding: 0px;
+    color: #192A56;
+    display: flex;
+    justify-content:space-around;
+}
+.Listas_Certis>ul>li{
+    list-style: square;
+}
+.parrafo_list{
+    width: 1300px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+.parrafo_list>h2{
+    font-size: 28px;
+    color: #ffb84f;
+    font-family: Sniglet;
+}
+.Yudi{
+    display: flex;
+}
