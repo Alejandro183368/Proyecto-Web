@@ -406,24 +406,62 @@ footer{
 .pio{
     width: 700px;
 }
-.galeria_proceso{
+#process{
     display: flex;
     flex-direction: row;
-}
-.proceso{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.llaves {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
     width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    color: #FF8C00;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.Vinculo{
+    color: #FF8C00;
+    text-decoration: none;
+}
+.card-description {
+    font-size: 1em;
     text-align: justify;
+    color: #555;
+    margin-bottom: 20px;
 }
-.proceso>img{
-    width: 700px;
-    height: 500px;
-}
-.proceso>h2,p{
-    padding: 10px;
-}
+
 /*-----------------------------------------------------------------------------------------------*/
 .my-4 {
     margin-top: 1.5rem !important;
