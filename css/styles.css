@@ -528,3 +528,90 @@ footer{
 .Yudi{
     display: flex;
 }
+/*-----------------------------------------Egresados----------------------------------------------------------*/
+.info_concursos{
+    background-color: #283747;
+    height: 440px;
+    padding: 50px;
+    padding-top: 10px;
+    color: azure;
+    display: flex;
+    justify-content:space-around;
+}
+.parrafo_concursos{
+    width: 700px;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.parrafo_concursos>h2{
+    font-size: 28px;
+    text-align: justify;
+    color: #ffb84f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parrafo_concursos>ul{
+    padding: 0;
+    margin: 0;
+}
+.parrafo_concursos>ul>li{
+    padding-bottom: 8px;
+    list-style:square;
+    color: #dedede    
+}
+.parrafo_concursos>ul>h3{
+    color: #fff;
+    font-family: Verdana;
+}
+/*--------------------------------------------------------------------------------------*/
+#Alumnos{
+    display: flex;
+    flex-direction: column;
+}
+#Alumnos>h2{
+    color: #192A56;
+    text-align: center;
+    font-size: 28px;
+}
+.Galeria_Alumno{
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.foto{
+    position: relative;
+    width: 600px;
+    height: 350px;
+}
+.foto>img:hover{
+    filter: brightness(0.6);
+}
+.foto:hover .content{
+    opacity: 1;
+}
+.content{
+    height: fit-content;
+    width: 100%;
+    font-size: 21px;
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s;
+}
+/*-----------------------------------------  Banner  2 -----------------------------------------------------------*/
+.items_2{
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    text-align: center;
+    font-size: 34px;
+    color: #dedede;
+    font-family: Jaini Purva;
+}
+
