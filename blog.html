@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -60,7 +61,7 @@
                 <div class="img_banner"><img src="sources/Academia_1.jpg" width="100%" height="100%" style="filter: brightness(0.6);"></div>
             </div>
             <div class="items">
-            <h2>Blog de Noticias</h2>
+            <h2>Blog Estudiantil</h2>
             </div>
         </section>
         <!-- Main Content-->
@@ -68,6 +69,7 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <!-- Post preview-->
+                    <div id="blog-posts"></div>
                     <div class="post-preview">
                         <a href="https://www.upslp.edu.mx/upslp/?p=18961">
                             <h2 class="post-title">Inaugura el Laboratorio de Tecnologías de la Información y Comunicación para la Formación de Capital Humano y Desarrollo Tecnológico para Industria 4.0</h2>
@@ -136,6 +138,15 @@
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
+                    <div class="posteo">
+                        <form id="post-form">
+                            <h2 style="text-align: center; color: #283747;">Crea tu Propia Publicación</h2>
+                            <input type="text" id="title" placeholder="Título" required>
+                            <textarea id="content" placeholder="Contenido" required></textarea>
+                            <textarea id="User" placeholder="Usuario" required></textarea>
+                            <button type="submit">Agregar Publicación</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
