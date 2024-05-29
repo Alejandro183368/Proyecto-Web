@@ -466,6 +466,7 @@ footer{
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: 150px;
   margin-left: 150px;
+  margin-bottom: 40px;
 }
 /*-----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------INFORMACIÓN-----------------------------------------------------------*/
@@ -614,4 +615,55 @@ footer{
     color: #dedede;
     font-family: Jaini Purva;
 }
+/*-----------------------------------------  Blog Extra -----------------------------------------------------------*/
+.posteo {
+    width: 100%;
+    margin: 0 0;
+    border: 0px;
+    overflow: hidden;
+}
+#post-form {
+    margin-top: 20px;
+}
 
+#post-form input,
+#post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+#post-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#post-form button:hover {
+    background-color: #555;
+}
+.post {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+}
+.post h2 {
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
+}
+.post h3 {
+    color: #212529;
+    font-weight: 300;
+    margin-bottom: 0.625rem;
+}
+.post p {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-top: 0;
+    color: #6c757d;
+  }
+
+  
